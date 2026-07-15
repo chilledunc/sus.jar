@@ -1,0 +1,31 @@
+name: SusPlugin
+version: '1.0.0'
+main: de.staff.sus.SusPlugin
+api-version: '1.20'
+author: Staff-Team
+description: Erkennt verdaechtige Aktivitaeten (Cheating) und bietet Staff-Tools zur Ueberpruefung.
+
+commands:
+  sus:
+    description: Oeffnet die GUI mit verdaechtigen Spielern.
+    usage: /sus
+    permission: sus.staff
+  offend:
+    description: Bannt einen Spieler mit Begruendung.
+    usage: /offend <Spieler> <Grund>
+    permission: sus.ban
+  susback:
+    description: Teleportiert dich zurueck aus dem Spectator-Modus.
+    usage: /susback
+    permission: sus.staff
+
+permissions:
+  sus.staff:
+    description: Erlaubt den Zugriff auf die Sus-GUI und Spectate-Funktion.
+    default: op
+  sus.ban:
+    description: Erlaubt das Bannen von Spielern via /offend.
+    default: op
+  sus.notify:
+    description: Erhaelt Live-Benachrichtigungen ueber verdaechtige Aktivitaeten.
+    default: op

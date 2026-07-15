@@ -1,0 +1,17 @@
+# Konfiguration fuer SusPlugin
+
+discord:
+  # Aktiviert/Deaktiviert Discord-Benachrichtigungen komplett
+  enabled: true
+
+  # Webhook-URL fuer den Discord-Channel, in dem Bans gemeldet werden sollen.
+  # WICHTIG: Diese URL sollte geheim gehalten werden - jeder mit dieser URL
+  # kann Nachrichten in deinen Discord-Channel senden!
+  webhook-url: "https://discordapp.com/api/webhooks/1527067828543422656/h5U_yzROB_0QpQlphGAZWp5Vn87QGa5HQq0zmwvRLpjv_8bTpbXTvkijPbp_dfVoDHaI"
+
+  # Wenn true, wird zusaetzlich schon bei jedem neuen Verdachtsfall (nicht nur beim Bann)
+  # eine Discord-Nachricht gesendet. Kann bei aktiver Erkennung sehr viele Nachrichten erzeugen!
+  notify-on-flag: false
+
+  # Name, der als Absender des Webhooks in Discord angezeigt wird
+  username: "SusPlugin"
